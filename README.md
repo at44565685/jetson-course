@@ -19,7 +19,7 @@
 cd ~
 git clone https://github.com/at44565685/jetson-course.git
 
-# 之後每次上課：取得更新的內容
+# 取得之後更新的內容
 cd ~/jetson-course
 git pull
 ```
