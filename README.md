@@ -17,19 +17,21 @@
 ```bash
 # 第一次上課：下載整個課程資料夾
 cd ~
-git clone https://github.com/<你的帳號>/<repo 名稱>.git
+git clone https://github.com/at44565685/jetson-course.git
 
 # 之後每次上課：取得更新的內容
-cd ~/<repo 名稱>
+cd ~/jetson-course
 git pull
 ```
 
 ## 內容
 
-| 檔案 | 對應章節 | 內容 |
+各章的筆記與範例放在對應的資料夾內，點資料夾名稱即可進入。
+
+| 資料夾 | 對應章節 | 內容 |
 |---|---|---|
-| [ch03_jetson-inference.md](ch03_jetson-inference.md) | 第三章 3.2 | JetPack 6.1／6.2 的 TensorRT 版本問題與 Docker 容器解法；imageNet、detectNet、segNet、poseNet、actionNet、backgroundNet、depthNet 的指令與可用模型 |
-| [ch04_realsense.md](ch04_realsense.md) | 第四章 4.1–4.2 | 以 libuvc 編譯安裝 RealSense SDK、RealSense Viewer 操作、Python 範例執行方式、常見問題 |
+| [ch03](ch03) | 第三章 3.2 | jetson-inference 範例指令整理：JetPack 6.1／6.2 的 TensorRT 版本問題與 Docker 容器解法；imageNet、detectNet、segNet、poseNet、actionNet、backgroundNet、depthNet 的指令與可用模型 |
+| [ch04](ch04) | 第四章 4.1–4.2 | RealSense 安裝與範例指令整理：以 libuvc 編譯安裝 RealSense SDK、RealSense Viewer 操作、Python 範例執行方式、常見問題 |
 
 ## 使用提醒
 
