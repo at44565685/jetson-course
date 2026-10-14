@@ -1,0 +1,8 @@
+# Jetson Orin Nano runtime requirements
+# 建議優先用 sudo apt install python3-numpy python3-opencv
+numpy>=1.21
+opencv-python>=4.5
+
+# pyrealsense2 必須與 ARM64 / JetPack / librealsense SDK 相容。
+# 請參閱 README，確認可用 wheel 或自行編譯 Python bindings。
+# pyrealsense2
