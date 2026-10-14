@@ -1,16 +1,5 @@
 # Jetson Orin Nano + RealSense D435i：單機工件尺寸量測
 
-## 修改目標
-
-本程式改寫自提供的 `subscriber_depth.py`（檔案註解寫 `subscriber_ai.py`），改成 **Jetson Orin Nano 以 USB 直接連接 Intel RealSense D435i**。相機影像不再由樹莓派透過 LCM 傳入。
-
-- **保留：** 使用彩色＋深度資料進行工件量測的核心目的。
-- **移除：** `lcm`、`exlcm`、`IMAGE_PAIR` 訂閱、`SYSTEM_STATUS`、CNC／Robot 命令及各類狀態機、`threading`。
-- **移除：** 原程式 `W: 120.3` 等固定假數值。
-- **不再依賴：** 原始程式引用、但本次未提供的 `workpiece_processor.py`。改由本檔自行完成桌面平面校正、3D 工件分割和尺寸估算。
-- **輸出：** 即時終端機顯示長、寬、高（mm），Jetson 桌面視窗疊圖，以及按 `S` 保存 PNG／CSV。
-- **逐段／主要執行行中文註解：** `jetson_d435i_measure.py` 已附。
-
 ## 硬體擺放要求（非常重要）
 
 1. 以 **USB 3.x** 將 D435i 直接接到 Jetson Orin Nano，儘量不要經過供電不足的 USB Hub。
