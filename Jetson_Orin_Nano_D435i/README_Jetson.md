@@ -28,7 +28,7 @@ uname -m
 python3 --version
 lsusb
 ```
-![image](/images/1.png)
+![image](images/1.png)
 `uname -m` 一般應回傳 `aarch64`。Jetson 的 RealSense SDK 安裝與 JetPack/L4T 版本相依，**請先確認版本再挑選官方相容安裝方法**。
 
 參考 RealSense 官方 Jetson 指南：
