@@ -28,7 +28,7 @@ uname -m
 python3 --version
 lsusb
 ```
-
+![image](/images/1.png)
 `uname -m` 一般應回傳 `aarch64`。Jetson 的 RealSense SDK 安裝與 JetPack/L4T 版本相依，**請先確認版本再挑選官方相容安裝方法**。
 
 參考 RealSense 官方 Jetson 指南：
@@ -64,8 +64,8 @@ python3 -c 'import pyrealsense2 as rs; print("pyrealsense2 OK", rs.__file__)'
 在 Linux 桌面上若已有 SDK 工具，先確認相機：
 
 ```bash
-rs-enumerate-devices
-realsense-viewer
+/usr/local/bin/rs-enumerate-devices
+/usr/local/bin/realsense-viewer
 ```
 
 若 `rs-enumerate-devices` 連 D435i 都看不到，**先處理 USB、相機驅動/權限，再執行本程式**。
