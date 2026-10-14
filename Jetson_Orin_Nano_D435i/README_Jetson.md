@@ -1,6 +1,6 @@
 # Jetson Orin Nano + RealSense D435i：單機工件尺寸量測
 
-## 硬體擺放要求（非常重要）
+## 硬體擺放要求
 
 1. 以 **USB 3.x** 將 D435i 直接接到 Jetson Orin Nano，儘量不要經過供電不足的 USB Hub。
 2. 牢固固定相機，**俯拍水平、平坦、盡可能無反光的桌面**。
