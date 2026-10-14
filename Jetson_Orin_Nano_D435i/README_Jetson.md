@@ -79,9 +79,11 @@ python3 -c 'import pyrealsense2 as rs; print("pyrealsense2 OK", rs.__file__)'
 ## 4. GUI 版本：直接執行
 
 ```bash
-cd Jetson_D435i_單機工件尺寸量測
+cd Jetson_Orin_Nano_D435i/
 python3 jetson_d435i_measure.py
 ```
+
+![image](images/6.png)
 
 - `R`：用滑鼠框選**只有平坦桌面**的 ROI（按 Enter 完成）。
 - **清空 ROI 內的桌面**，再按 `C`：收集多張深度影格擬合桌面平面。
@@ -96,6 +98,8 @@ python3 jetson_d435i_measure.py
 python3 jetson_d435i_measure.py --roi 80,60,480,360
 ```
 
+![image](images/7.png)
+
 上述數字只是 ROI 示例，**不是工件尺寸或相機校正值**；請依你的桌面畫面調整。
 
 ## 5. 只有 SSH 終端機、沒有顯示器時
@@ -103,6 +107,8 @@ python3 jetson_d435i_measure.py --roi 80,60,480,360
 ```bash
 python3 jetson_d435i_measure.py --no-window --roi 80,60,480,360
 ```
+
+![image](images/8.png)
 
 程式會先停下來等你確認「桌面已清空」並按 Enter，之後校正並持續輸出尺寸。使用 `Ctrl+C` 結束。**這種模式沒有視窗，不能按 R/C/S**，建議第一次先用 GUI 選好合適的 ROI 座標。
 
@@ -117,6 +123,8 @@ python3 jetson_d435i_measure.py \
   --measure-every 3 \
   --print-every 2
 ```
+
+![image](images/9-1.png)
 
 這些都是**可調式量測閾值**，不是固定的工件長寬。
 
@@ -137,6 +145,8 @@ python3 jetson_d435i_measure.py \
 [量測] 工件#1  長=... mm  寬=... mm  高=... mm  (有效點=...)
 ```
 
+![image](images/9-2.png)
+
 不管你採用 GUI 或 SSH，都必須先完成空桌面校正；沒有桌面深度幾何便無法可靠把像素長寬轉成 mm。
 
 ## 8. 測試與驗證
@@ -146,6 +156,8 @@ python3 jetson_d435i_measure.py \
 ```bash
 python3 test_geometry.py -v
 ```
+
+![image](images/10.png)
 
 內建單元測試使用**合成點雲**，測試矩形工件長寬高是否由 3D 資料正確計算。**目前未在實體 Jetson Orin Nano + D435i 上執行實測**。請在正式使用前以游標卡尺量測已知尺寸的工件，從不同位置／高度重複測量，評估誤差與穩定性；若需要工業精度，還需更完整的標定／誤差模型。
 
