@@ -44,6 +44,7 @@ sudo apt update
 sudo apt install -y python3-pip python3-numpy python3-opencv
 python3 -c 'import cv2, numpy; print(cv2.__version__, numpy.__version__)'
 ```
+![image](images/2.png)
 
 如果你是自行建立的 `venv`，要確認該環境可以存取上述依賴，或在 venv 內安裝與 JetPack 相容的版本；不要未確認相容性就批次升級系統的 NumPy / OpenCV。
 
@@ -54,6 +55,7 @@ python3 -c 'import cv2, numpy; print(cv2.__version__, numpy.__version__)'
 ```bash
 python3 -c 'import pyrealsense2 as rs; print("pyrealsense2 OK", rs.__file__)'
 ```
+![image](images/3.png)
 
 若已成功匯入，可直接跳到執行。若尚未安裝：
 
@@ -68,6 +70,9 @@ python3 -c 'import pyrealsense2 as rs; print("pyrealsense2 OK", rs.__file__)'
 /usr/local/bin/rs-enumerate-devices
 /usr/local/bin/realsense-viewer
 ```
+![image](images/4.png)
+
+![image](images/5.png)
 
 若 `rs-enumerate-devices` 連 D435i 都看不到，**先處理 USB、相機驅動/權限，再執行本程式**。
 
