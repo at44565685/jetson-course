@@ -2,7 +2,7 @@
 
 ## 課程環境
 
-本章全程於 Jetson Orin Nano 上完成，不需另一台電腦。先安裝 ROS 2 Humble，以 turtlesim 認識 ROS 2 的核心概念；再以 Gazebo Fortress 模擬 TurtleBot3 Burger，撰寫節點並完成建圖與導航。
+本章全程於 Jetson Orin Nano 上完成。先安裝 ROS 2 Humble，以 turtlesim 認識 ROS 2 的核心概念；再以 Gazebo Fortress 模擬 TurtleBot3 Burger，撰寫節點並完成建圖與導航。
 
 | 項目 | 內容 |
 |---|---|
