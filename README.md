@@ -9,6 +9,7 @@
 | 運算平台 | Jetson Orin Nano 8GB 開發者套件 |
 | 系統版本 | JetPack 6.2 系列 |
 | 攝影機 | USB 網路攝影機；Intel RealSense D435i（第四章） |
+| ROS 2 | ROS 2 Humble；Gazebo Fortress 模擬 TurtleBot3 Burger（第五章） |
 
 ## 下載方式
 
@@ -32,6 +33,7 @@ git pull
 |---|---|---|
 | [ch03](ch03) | 第三章 3.2 | jetson-inference 範例指令整理：JetPack 6.1／6.2 的 TensorRT 版本問題與 Docker 容器解法；imageNet、detectNet、segNet、poseNet、actionNet、backgroundNet、depthNet 的指令與可用模型 |
 | [ch04](ch04) | 第四章 4.1–4.2 | RealSense 安裝與範例指令整理：以 libuvc 編譯安裝 RealSense SDK、RealSense Viewer 操作、Python 範例執行方式、常見問題 |
+| [ch05](ch05) | 第五章 5.1–5.3 | ROS 2 模擬與範例指令整理：turtlesim 核心概念、TurtleBot3 模擬（`turtlebot3_fortress`）、範例節點（`tb3_course`）、SLAM 建圖與 Nav2 導航、常見問題 |
 
 ## 使用提醒
 
@@ -44,3 +46,4 @@ git pull
 - [dusty-nv/jetson-inference](https://github.com/dusty-nv/jetson-inference)：第三章使用的深度學習推論函式庫
 - [cavedunissin/edgeai_jetson_orin](https://github.com/cavedunissin/edgeai_jetson_orin)：第四章使用的 Python 範例程式
 - [librealsense](https://github.com/realsenseai/librealsense)：RealSense SDK 原始碼與安裝腳本
+- [ROBOTIS-GIT/turtlebot3_simulations](https://github.com/ROBOTIS-GIT/turtlebot3_simulations)：第五章 TurtleBot3 模型與場景的來源
