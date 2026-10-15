@@ -623,23 +623,6 @@ ros2 run tb3_course patrol --ros-args -p use_sim_time:=true -p num_points:=4 -p 
 [INFO] [basic_navigator]: 巡邏結束
 ```
 
-## 課後作業：drive_distance
-
-```bash
-ros2 run tb3_course drive_distance --ros-args -p use_sim_time:=true -p distance:=0.5
-```
-
-| 參數 | 預設值 | 說明 |
-|---|---|---|
-| `distance` | 1.0 | 前進距離（公尺） |
-| `speed` | 0.1 | 前進速度（公尺／秒） |
-
-1. 閱讀 `drive_distance.py`，說明其如何判斷已到達目標距離，以及實際距離為何會略大於設定值。
-2. 仿照 `drive_distance`，撰寫原地旋轉 90° 的節點 `turn_angle`（提示：比較偏航角的變化；四元數換算見 `yaw_from_quaternion()`，第 19–23 行）。
-3. 撰寫一個 launch 檔，同時啟動模擬與 `obstacle_stop`（啟動檔之寫法見 5.4.4）。
-
----
-
 ## 常見問題
 
 | 現象 | 原因 | 處理方式 |
