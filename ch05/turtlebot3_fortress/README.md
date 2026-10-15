@@ -2,19 +2,7 @@
 
 在 Jetson Orin Nano（JetPack 6、ROS 2 Humble）上以 Gazebo Fortress 模擬 TurtleBot3 Burger。
 
-TurtleBot3 官方的 Humble 模擬套件使用 Gazebo Classic，無法安裝於 Jetson（arm64）。本套件將官方 Jazzy 版的車體模型、網格與 TurtleBot3 World 場景改寫為 Gazebo Fortress 的格式；建圖、導航與鍵盤遙控沿用 TurtleBot3 官方的 Humble 套件。
-
 模型、網格與場景取自 [ROBOTIS-GIT/turtlebot3_simulations](https://github.com/ROBOTIS-GIT/turtlebot3_simulations)（Apache License 2.0）。
-
-## 修改內容
-
-| 項目 | 修改 |
-|---|---|
-| 外掛名稱 | `gz-sim-*` 改為 Fortress 的 `ignition-gazebo-*` |
-| 座標系名稱 | `gz_frame_id` 改為 `ignition_frame_id` |
-| 場景 | 地面與光源改為內建模型，不需連網下載；關閉陰影 |
-| 運算負擔 | IMU 由 200 Hz 降為 50 Hz；不繪製光達射線 |
-| 速度指令 | `/cmd_vel` 使用 `geometry_msgs/msg/Twist`，與 Humble 的 teleop、Nav2 一致 |
 
 ## 安裝
 
