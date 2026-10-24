@@ -10,6 +10,7 @@
 | 系統版本 | JetPack 6.2 系列 |
 | 攝影機 | USB 網路攝影機；Intel RealSense D435i（第四章） |
 | ROS 2 | ROS 2 Humble；Gazebo Fortress 模擬 TurtleBot3 Burger（第五章） |
+| 儲存空間 | 第六章須使用 SSD（約 25 GB） |
 
 ## 下載方式
 
@@ -33,7 +34,8 @@ git pull
 |---|---|---|
 | [ch03](ch03) | 第三章 3.2 | jetson-inference 範例指令整理：JetPack 6.1／6.2 的 TensorRT 版本問題與 Docker 容器解法；imageNet、detectNet、segNet、poseNet、actionNet、backgroundNet、depthNet 的指令與可用模型 |
 | [ch04](ch04) | 第四章 4.1–4.2 | RealSense 安裝與範例指令整理：以 libuvc 編譯安裝 RealSense SDK、RealSense Viewer 操作、Python 範例執行方式、常見問題 |
-| [ch05](ch05) | 第五章 5.1–5.3 | ROS 2 模擬與範例指令整理：turtlesim 核心概念、TurtleBot3 模擬（`turtlebot3_fortress`）、範例節點（`tb3_course`）、SLAM 建圖與 Nav2 導航、常見問題 |
+| [ch05](ch05) | 第五章 5.1–5.7 | ROS 2 安裝、模擬與範例指令整理：ROS 2 Humble 安裝、turtlesim 核心概念、套件與工作空間、TurtleBot3 模擬（`turtlebot3_fortress`）、範例節點（`tb3_course`）、SLAM 建圖與 Nav2 導航、常見問題 |
+| [ch06](ch06) | 第六章 6.1–6.9 | 生成式 AI 應用與範例指令整理：Ollama 安裝與模型比較、Ollama API、Open WebUI 與模型設定、RAG 知識庫問答、jetson-containers 與 stable-diffusion-webui、生成參數實驗、常見問題；`start_sd.sh` 為 Stable Diffusion 啟動腳本 |
 
 ## 使用提醒
 
@@ -47,3 +49,6 @@ git pull
 - [cavedunissin/edgeai_jetson_orin](https://github.com/cavedunissin/edgeai_jetson_orin)：第四章使用的 Python 範例程式
 - [librealsense](https://github.com/realsenseai/librealsense)：RealSense SDK 原始碼與安裝腳本
 - [ROBOTIS-GIT/turtlebot3_simulations](https://github.com/ROBOTIS-GIT/turtlebot3_simulations)：第五章 TurtleBot3 模型與場景的來源
+- [Ollama](https://github.com/ollama/ollama)：第六章執行大型語言模型的工具
+- [Open WebUI](https://github.com/open-webui/open-webui)：第六章的網頁對話介面與知識庫
+- [dusty-nv/jetson-containers](https://github.com/dusty-nv/jetson-containers)：第六章 stable-diffusion-webui 容器的來源
