@@ -1,0 +1,10 @@
+{
+  "initial_pose": {"x": 0.0, "y": 0.0, "yaw": 0.0},
+  "loops": 1,
+  "waypoints": [
+    {"name": "料架A",  "x": -3.5, "y": 0.6,  "yaw": 0.0,  "task": "pick",  "item": "螺絲", "duration": 3},
+    {"name": "料架B",  "x": -1.2, "y": 2.6,  "yaw": 1.57, "task": "pick",  "item": "墊片", "duration": 3},
+    {"name": "組裝站", "x": 0.5,  "y": 1.6,  "yaw": 0.0,  "task": "place", "item": "螺絲", "duration": 5},
+    {"name": "出貨區", "x": -1.9, "y": -1.5, "yaw": 3.14, "task": "place", "item": "齒輪", "duration": 2}
+  ]
+}
